@@ -1,0 +1,56 @@
+Re-ranking
+
+Due to the high computational cost, the re-ranking was tested using 100 queries and 10 ranks for each query. For bi-encoder, I used the model of “sentence-transformers/multi-qa-distilbert-cos-v1”
+
+-----------------------------------------------
+For bm25
+
+Performance of ranking candidates
+
+nDCG@3     = 0.025
+nDCG@5     = 0.024
+nDCG@10    = 0.023
+nDCG@20    = 0.024
+R@5        = 0.011
+R@10       = 0.017
+R@100      = 0.024
+R@1000     = 0.024
+
+Performance of re-ranking candidates
+
+nDCG@3     = 0.017
+nDCG@5     = 0.019
+nDCG@10    = 0.021
+nDCG@20    = 0.017
+R@5        = 0.008
+R@10       = 0.018
+R@100      = 0.018
+R@1000     = 0.018
+
+-----------------------------------------------
+For bi-encoder
+
+Performance of ranking candidates
+
+nDCG@3     = 0.016
+nDCG@5     = 0.015
+nDCG@10    = 0.015
+nDCG@20    = 0.017
+R@5        = 0.007
+R@10       = 0.011
+R@100      = 0.018
+R@1000     = 0.018
+
+Performance of re-ranking candidates
+
+nDCG@3     = 0.013
+nDCG@5     = 0.013
+nDCG@10    = 0.014
+nDCG@20    = 0.012
+R@5        = 0.006
+R@10       = 0.011
+R@100      = 0.011
+R@1000     = 0.011
+
+-----------------------------------------------
+Overall, my test shows that re-ranking of both BM25 and bi-encoder ranking candidates result in poorer performance, although I have tried my best to debug my codes.

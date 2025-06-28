@@ -1,0 +1,114 @@
+Ranking
+
+In total, I ranked for 2234 queries. For each query, I created the ranking for the top 20 documents only. In terms of performance of the bi-encoder models, I found that the model of “sentence-transformers/multi-qa-distilbert-cos-v1” resulted in the best measures. Detailed test results for each model were list below:
+
+-----------------------------------------
+bm25
+
+nDCG@3     = 0.516
+nDCG@5     = 0.494
+nDCG@10    = 0.472
+nDCG@20    = 0.504
+R@5        = 0.235
+R@10       = 0.364
+R@100      = 0.518
+R@1000     = 0.518
+
+sentence-transformers/multi-qa-mpnet-base-dot-v1
+
+nDCG@3     = 0.313
+nDCG@5     = 0.292
+nDCG@10    = 0.273
+nDCG@20    = 0.289
+R@5        = 0.126
+R@10       = 0.197
+R@100      = 0.289
+R@1000     = 0.289
+
+sentence-transformers/multi-qa-distilbert-cos-v1 (this model is best!)
+
+nDCG@3     = 0.343
+nDCG@5     = 0.323
+nDCG@10    = 0.305
+nDCG@20    = 0.329
+R@5        = 0.147
+R@10       = 0.227
+R@100      = 0.339
+R@1000     = 0.339
+
+sentence-transformers/msmarco-distilbert-base-tas-b
+
+nDCG@3     = 0.338
+nDCG@5     = 0.315
+nDCG@10    = 0.299
+nDCG@20    = 0.321
+R@5        = 0.141
+R@10       = 0.222
+R@100      = 0.329
+R@1000     = 0.329
+
+sentence-transformers/all-mpnet-base-v2
+
+nDCG@3     = 0.336
+nDCG@5     = 0.314
+nDCG@10    = 0.303
+nDCG@20    = 0.325
+R@5        = 0.141
+R@10       = 0.225
+R@100      = 0.333
+R@1000     = 0.333
+
+sentence-transformers/sentence-t5-base
+
+nDCG@3     = 0.304
+nDCG@5     = 0.283
+nDCG@10    = 0.268
+nDCG@20    = 0.289
+R@5        = 0.126
+R@10       = 0.198
+R@100      = 0.297
+R@1000     = 0.297
+
+sentence-transformers/all-distilroberta-v1
+
+nDCG@3     = 0.325
+nDCG@5     = 0.307
+nDCG@10    = 0.289
+nDCG@20    = 0.309
+R@5        = 0.137
+R@10       = 0.211
+R@100      = 0.311
+R@1000     = 0.311
+
+sentence-transformers/msmarco-bert-base-dot-v5
+
+nDCG@3     = 0.319
+nDCG@5     = 0.295
+nDCG@10    = 0.274
+nDCG@20    = 0.290
+R@5        = 0.127
+R@10       = 0.195
+R@100      = 0.287
+R@1000     = 0.287
+
+sentence-transformers/stsb-distilbert-base
+
+nDCG@3     = 0.273
+nDCG@5     = 0.251
+nDCG@10    = 0.222
+nDCG@20    = 0.226
+R@5        = 0.103
+R@10       = 0.151
+R@100      = 0.216
+R@1000     = 0.216
+
+sentence-transformers/nq-distilbert-base-v1
+
+nDCG@3     = 0.281
+nDCG@5     = 0.258
+nDCG@10    = 0.241
+nDCG@20    = 0.257
+R@5        = 0.108
+R@10       = 0.174
+R@100      = 0.260
+R@1000     = 0.260
